@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Algorithms run = new Algorithms();
-            run.Anagram();
+            //run.Anagram();
+            run.BubbleSort();
         }
     }
 }
