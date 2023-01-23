@@ -74,21 +74,6 @@ namespace DSA_Algorithms
                 Console.Write(arr[i] + " ");
             }
         }
-        //public void binary()
-        //{
-        //    var text = "An old hawk in the sky";
-        //    var word = "hawk";
-
-        //    if (text.Contains(word))
-        //    {
-        //        Console.WriteLine($"The text contains the {word} word");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine($"The text does not contain the {word} word");
-        //    }
-        //}
-
         public void Binary(string input)
         {
             string[] text = System.IO.File.ReadAllLines(@"D:\Bridgelab\repos\DSA_Algorithms\DSA_Algorithms\BinarySearch.txt");
@@ -104,6 +89,26 @@ namespace DSA_Algorithms
             }
             Console.WriteLine("Word not present");
             return;
+        }
+        public void PrimeNumber()
+        {
+            Console.WriteLine("Enter the Number : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Prime Numbers between 0 and 1000 are :");
+            for (int j = 2; j <= number; j++)
+            {
+                int count = 0;
+                for (int i = 2; i <= j / 2; i++)
+                {
+                    if ((j % i) == 0)
+                    {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0)
+                    Console.Write(j + " ");
+            }
         }
     }
 }
