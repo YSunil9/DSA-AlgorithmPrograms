@@ -51,7 +51,7 @@ namespace DSA_Algorithms
         }
         public void InsertionSort(int[] arr)
         {
-            
+
             int size = arr.Length;
             for (int i = 1; i < size; i++)
             {
@@ -73,6 +73,37 @@ namespace DSA_Algorithms
             {
                 Console.Write(arr[i] + " ");
             }
+        }
+        //public void binary()
+        //{
+        //    var text = "An old hawk in the sky";
+        //    var word = "hawk";
+
+        //    if (text.Contains(word))
+        //    {
+        //        Console.WriteLine($"The text contains the {word} word");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"The text does not contain the {word} word");
+        //    }
+        //}
+
+        public void Binary(string input)
+        {
+            string[] text = System.IO.File.ReadAllLines(@"D:\Bridgelab\repos\DSA_Algorithms\DSA_Algorithms\BinarySearch.txt");
+            for (int i = 0; i < text.Length; i++)
+            {
+                int val = string.Compare(input, text[i]);
+                if (val == 0)
+                {
+                    Console.WriteLine(text[i]);
+                    Console.WriteLine("Entered word present on " + i + " index");
+                    return;
+                }
+            }
+            Console.WriteLine("Word not present");
+            return;
         }
     }
 }

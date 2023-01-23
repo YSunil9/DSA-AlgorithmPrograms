@@ -1,4 +1,6 @@
-﻿namespace DSA_Algorithms
+﻿using static System.Net.Mime.MediaTypeNames;
+
+namespace DSA_Algorithms
 {
     internal class Program
     {
@@ -9,9 +11,11 @@
             //run.BubbleSort();
             //InsertionSort insertionSort = new InsertionSort();
 
-            int[] arr = { 60, 20, 4, 35, 10, 15, 5 };
-            run.InsertionSort(arr);
-            run.Display(arr);
+            //int[] arr = { 60, 20, 4, 35, 10, 15, 5 };
+            //run.InsertionSort(arr);
+            //run.Display(arr);
+
+            run.Binary("dhoni");
         }
     }
 }
