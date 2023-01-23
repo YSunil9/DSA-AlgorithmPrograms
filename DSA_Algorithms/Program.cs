@@ -7,7 +7,12 @@ namespace DSA_Algorithms
         static void Main(string[] args)
         {
             Algorithms run = new Algorithms();
-              run.PrimeNumber();
+            int[] array = { 30, 20, 50, 70, 120, 180, 100, 40 };
+            Console.WriteLine("Before Sorting:");
+            run.Print(array);
+            Console.WriteLine("\nAfter Sorting");
+            run.sort(array, 0, array.Length - 1);
+            run.Print(array);
         }
     }
 }
